@@ -1,7 +1,7 @@
 // src/data/dataDef.ts
 
-import {StaticImageData} from 'next/image';
 import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
+import {StaticImageData} from 'next/image';
 import {IconProps} from '../components/Icon/Icon';
 
 export interface HomepageMeta {
@@ -90,7 +90,6 @@ export interface ContactItem {
   href?: string;
 }
 
-// THIS IS THE MISSING PIECE WE ARE ADDING BACK
 export interface ContactValue {
   Icon: FC<IconProps> | ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
   srLabel: string;
