@@ -105,35 +105,35 @@ export const skills: SkillGroup[] = [
   {
     name: 'Languages',
     skills: [
-      { name: 'Polish', level: 10 },
-      { name: 'English', level: 9 },
-      { name: 'Danish', level: 5 },
+      {name: 'Polish', level: 10},
+      {name: 'English', level: 9},
+      {name: 'Danish', level: 5},
     ],
   },
   {
     name: 'Agile & Transformation',
     skills: [
-      { name: 'Agile Coaching & Facilitation', level: 10 },
-      { name: 'SAFe, Scrum, Kanban', level: 9 },
-      { name: 'Lean Portfolio Management', level: 8 },
-      { name: 'BizDevOps', level: 8 },
+      {name: 'Agile Coaching & Facilitation', level: 10},
+      {name: 'SAFe, Scrum, Kanban', level: 9},
+      {name: 'Lean Portfolio Management', level: 8},
+      {name: 'BizDevOps', level: 8},
     ],
   },
   {
     name: 'Management & Strategy',
     skills: [
-      { name: 'Change Management', level: 9 },
-      { name: 'Stakeholder Engagement', level: 9 },
-      { name: 'Process Improvement', level: 8 },
+      {name: 'Change Management', level: 9},
+      {name: 'Stakeholder Engagement', level: 9},
+      {name: 'Process Improvement', level: 8},
     ],
   },
   {
     name: 'Tools',
     skills: [
-      { name: 'Jira & Confluence', level: 9 },
-      { name: 'Power Platform (Apps, Automate)', level: 7 },
-      { name: 'Power BI', level: 7 },
-      { name: 'Trello', level: 8 },
+      {name: 'Jira & Confluence', level: 9},
+      {name: 'Power Platform (Apps, Automate)', level: 7},
+      {name: 'Power BI', level: 7},
+      {name: 'Trello', level: 8},
     ],
   },
 ];
