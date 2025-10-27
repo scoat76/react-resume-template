@@ -43,6 +43,7 @@ export interface Skill {
 export interface SkillGroup {
   name: string;
   skills: Skill[];
+  max?: number;
 }
 
 export interface PortfolioItem {
