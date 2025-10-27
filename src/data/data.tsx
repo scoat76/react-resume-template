@@ -10,6 +10,11 @@ import {
 } from '@heroicons/react/24/outline';
 
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import heroImage from '../images/header-background.webp'; // ADD THIS LINE
+import porfolioImage1 from '../images/portfolio/portfolio-1.jpg'; // ADD THIS LINE
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg'; // ADD THIS LINE
+import profilepic from '../images/profilepic.jpg'; // ADD THIS LINE
+import testimonialImage from '../images/testimonial.webp'; // ADD THIS LINE
 import {
   About,
   ContactSection,
