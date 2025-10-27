@@ -216,13 +216,8 @@ export const testimonial: TestimonialSection = {
  */
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out for collaboration opportunities or any questions.',
+  description: 'Feel free to reach out for collaboration opportunities or any questions using the form below.',
   items: [
-    {
-      type: ContactType.Email,
-      text: 'pr@raczka.eu',
-      href: 'mailto:pr@raczka.eu',
-    },
     {
       type: ContactType.Location,
       text: 'Copenhagen, Denmark',
