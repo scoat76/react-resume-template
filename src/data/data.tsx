@@ -103,13 +103,13 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Languages',
-    skills: [
-      {name: 'Polish', level: 10},
-      {name: 'English', level: 9},
-      {name: 'Danish', level: 5},
-    ],
-  },
+      name: 'Management & Strategy',
+      skills: [
+        {name: 'Change Management', level: 9},
+        {name: 'Stakeholder Engagement', level: 9},
+        {name: 'Process Improvement', level: 8},
+      ],
+    },
   {
     name: 'Agile & Transformation',
     skills: [
@@ -117,14 +117,6 @@ export const skills: SkillGroup[] = [
       {name: 'SAFe, Scrum, Kanban', level: 9},
       {name: 'Lean Portfolio Management', level: 8},
       {name: 'BizDevOps', level: 8},
-    ],
-  },
-  {
-    name: 'Management & Strategy',
-    skills: [
-      {name: 'Change Management', level: 9},
-      {name: 'Stakeholder Engagement', level: 9},
-      {name: 'Process Improvement', level: 8},
     ],
   },
   {
@@ -136,6 +128,14 @@ export const skills: SkillGroup[] = [
       {name: 'Trello', level: 8},
     ],
   },
+  {
+      name: 'Languages',
+      skills: [
+        {name: 'Polish', level: 10},
+        {name: 'English', level: 9},
+        {name: 'Danish', level: 5},
+      ],
+    },
 ];
 
 /**
