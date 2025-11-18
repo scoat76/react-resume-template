@@ -13,6 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -152,6 +153,12 @@ export const portfolioItems: PortfolioItem[] = [
     url: '#',
     image: porfolioImage2,
   },
+  {
+      title: 'AI & Home Automation System',
+      description: 'Built a functional home automation system using Raspberry Pi, Python, and YAML, integrating multiple APIs to automate routines and reduce energy consumption.',
+      url: '#',
+      image: porfolioImage3,
+    },
 ];
 
 /**
