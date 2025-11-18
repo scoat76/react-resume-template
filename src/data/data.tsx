@@ -10,11 +10,11 @@ import {
 } from '@heroicons/react/24/outline';
 
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/header-background.webp'; // ADD THIS LINE
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg'; // ADD THIS LINE
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg'; // ADD THIS LINE
-import profilepic from '../images/profilepic.jpg'; // ADD THIS LINE
-import testimonialImage from '../images/testimonial.webp'; // ADD THIS LINE
+import heroImage from '../images/header-background.webp';
+import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import profilepic from '../images/profilepic.jpg';
+import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -32,8 +32,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Przemyslaw Raczka | Agile Coach',
-  description: "Website and resume of Przemyslaw Raczka, Agile Coach & SAFe Program Consultant",
+  title: 'Przemyslaw Raczka | Enterprise Transformation Lead',
+  description: "Professional portfolio of Przemyslaw Raczka, Enterprise Transformation Lead and SAFe Program Consultant.",
 };
 
 /**
@@ -61,16 +61,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Certified <strong className="text-stone-100">Agile Coach (SPC)</strong> with 20+ years of experience in IT and financial services, including 18 years at Nordea.
+        <strong className="text-stone-100">Enterprise Transformation Lead</strong> & Head of Value Stream Management.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I specialize in enterprise-scale Agile transformations, coaching executives and teams to enable organizations to achieve business agility.
+        Known as <strong className="text-stone-100">"The Value Accelerator"</strong>. I bridge strategic vision with practical execution, utilizing data-driven insights and Nordic management style to deliver measurable business value.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/CV_agile.pdf',
+      href: '/CV_Enterprise_Transformation_Lead.pdf', // Pamiętaj, aby zmienić nazwę pliku w folderze public, jeśli wgrasz nowy
       text: 'Download CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -88,13 +88,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Certified Agile Coach (SPC) with a strong track record in building high-performing teams, aligning leadership around Lean-Agile principles, and embedding sustainable change across international environments.`,
+  description: `Senior leader with over 20 years in IT and financial services, certified SAFe Program Consultant (SPC). My strength lies in bridging strategic vision with practical, hands-on execution. Originally from Poland and a long-term resident of Denmark, I am culturally fluent and utilize this perspective to foster collaboration in international teams. I excel at translating complex theory into practice using structured working methods and data-driven analysis.`,
   aboutItems: [
-    {label: 'Location', text: 'Copenhagen, Denmark', Icon: MapIcon},
-    {label: 'Languages', text: 'Polish, English, Danish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Scuba diving, skiing, go-karts, chess', Icon: SparklesIcon},
-    {label: 'Study', text: 'Warsaw University of Technology', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Nordea', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Copenhagen, Denmark / Warsaw, Poland', Icon: MapIcon},
+    {label: 'Languages', text: 'Polish (Native), English (Full), Danish (PD4)', Icon: FlagIcon},
+    {label: 'Interests', text: 'Chess, Scuba Diving, Skiing, AI & Automation', Icon: SparklesIcon},
+    {label: 'Education', text: 'M.Eng., Warsaw University of Technology', Icon: AcademicCapIcon},
+    {label: 'Core Focus', text: 'Value Stream Management', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -103,39 +103,37 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-      name: 'Management & Strategy',
-      skills: [
-        {name: 'Change Management', level: 9},
-        {name: 'Stakeholder Engagement', level: 9},
-        {name: 'Process Improvement', level: 8},
-      ],
-    },
-  {
-    name: 'Agile & Transformation',
+    name: 'Enterprise Transformation',
     skills: [
-      {name: 'Agile Coaching & Facilitation', level: 10},
-      {name: 'SAFe, Scrum, Kanban', level: 9},
-      {name: 'Lean Portfolio Management', level: 8},
-      {name: 'BizDevOps', level: 8},
+      {name: 'SAFe & Lean Portfolio Mgmt', level: 10, max: 10},
+      {name: 'Organizational Design', level: 9, max: 10},
+      {name: 'Change Management', level: 9, max: 10},
     ],
   },
   {
-    name: 'Tools',
+    name: 'Value Stream Mgmt',
     skills: [
-      {name: 'Jira & Confluence', level: 9},
-      {name: 'Power Platform (Apps, Automate)', level: 7},
-      {name: 'Power BI', level: 7},
-      {name: 'Trello', level: 8},
+      {name: 'Process Optimization', level: 10, max: 10},
+      {name: 'Business-IT Alignment', level: 9, max: 10},
+      {name: 'Flow Metrics Analysis', level: 9, max: 10},
     ],
   },
   {
-      name: 'Languages',
-      skills: [
-        {name: 'Polish', level: 10},
-        {name: 'English', level: 9},
-        {name: 'Danish', level: 5},
-      ],
-    },
+    name: 'Data & Technology',
+    skills: [
+      {name: 'Power BI & SQL', level: 8, max: 10},
+      {name: 'Python & Automation', level: 7, max: 10},
+      {name: 'CI/CD & DevOps', level: 7, max: 10},
+    ],
+  },
+  {
+    name: 'Leadership',
+    skills: [
+      {name: 'Executive Coaching', level: 9, max: 10},
+      {name: 'Stakeholder Engagement', level: 10, max: 10},
+      {name: 'Large-Scale Training', level: 10, max: 10},
+    ],
+  },
 ];
 
 /**
@@ -143,14 +141,14 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Agile Transformation at Nordea',
-    description: 'Led the enterprise Agile transformation for 2,700+ IT employees, restructuring departments into Agile Release Trains (ARTs) and cross-functional teams.',
+    title: 'Serverless AI Assistant',
+    description: 'Architected and deployed a serverless AI assistant via an automated CI/CD pipeline (Netlify), demonstrating full-stack, end-to-end delivery capability.',
     url: '#',
     image: porfolioImage1,
   },
   {
     title: 'Internal Agile Academy',
-    description: 'Designed and scaled an internal academy that trained 1,600+ colleagues across the Nordics and Poland, achieving a 4.7/5 satisfaction score.',
+    description: 'Designed and scaled an internal Agile Academy, training over 1,600 colleagues across Nordics and Poland, achieving a 4.7/5 satisfaction score.',
     url: '#',
     image: porfolioImage2,
   },
@@ -164,7 +162,7 @@ export const education: TimelineItem[] = [
     date: '1996 – 2002',
     location: 'Warsaw University of Technology',
     title: 'M.Eng., Computer-Aided Design (CAD)',
-    content: <p>Completed Master of Engineering studies at the Faculty of Power and Aeronautical Engineering.</p>,
+    content: <p>Master of Engineering degree.</p>,
   },
 ];
 
@@ -172,11 +170,14 @@ export const experience: TimelineItem[] = [
   {
     date: '2018 – Present',
     location: 'Nordea, Copenhagen',
-    title: 'Agile Coach',
+    title: 'Agile Coach / Enterprise Transformation Lead',
     content: (
-      <p>
-        Led enterprise Agile transformation, coached leaders and teams, and designed/scaled an internal Agile Academy. Introduced digital tools (Power Platform) to optimize training administration.
-      </p>
+      <ul className="list-disc pl-5">
+        <li>Managed multiple Agile Release Trains (ARTs) across 2,700+ IT employees.</li>
+        <li>Improved delivery predictability from 65% to 90% and reduced feature cycle time by 20%.</li>
+        <li>Partnered with leadership to map end-to-end financial processes and identify bottlenecks.</li>
+        <li>Introduced Power Platform tools reducing training administration by 60%.</li>
+      </ul>
     ),
   },
   {
@@ -185,11 +186,20 @@ export const experience: TimelineItem[] = [
     title: 'Senior Project Methods Expert',
     content: (
       <p>
-        Acted as a Scrum Master for a Group Technology support team. Led a compliance initiative, coaching teams to meet Nordea Software Process standards.
+        Acted as Scrum Master and process lead. Facilitated process improvements that increased team velocity by 25% and reduced critical bug-fix turnaround time by 40%.
       </p>
     ),
   },
-  // Add other experiences if you want
+  {
+    date: '2008 – 2016',
+    location: 'Nordea, Copenhagen',
+    title: 'IT Senior Test Manager',
+    content: (
+      <p>
+        Directed testing for large-scale programs and projects across multiple countries. Implemented risk-based QA strategies increasing defect detection efficiency by 30%.
+      </p>
+    ),
+  },
 ];
 
 /**
@@ -199,13 +209,13 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Senior Manager, Nordea',
-      text: "Przemyslaw's coaching was instrumental in our transition to Agile. His expertise in SAFe and his ability to engage with leadership were key to our success.",
+      name: 'Stakeholder, Nordea',
+      text: "Przemyslaw is a direct and frank communicator who excels at translating complex theory into practice. His structured methods deliver tangible business value.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Participant, Agile Academy',
-      text: 'The Agile Academy he developed has become a cornerstone of our internal training program, significantly accelerating our adoption of Agile practices.',
+      name: 'Academy Participant',
+      text: 'The Agile Academy designed by Przemyslaw was a game changer for our department, significantly upskilling our workforce across the Nordics.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
   ],
@@ -216,16 +226,21 @@ export const testimonial: TestimonialSection = {
  */
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out for collaboration opportunities or any questions using the form below.',
+  description: 'Feel free to reach out for collaboration opportunities, consulting, or questions regarding Enterprise Transformation.',
   items: [
+    {
+      type: ContactType.Phone,
+      text: '+45 61226883 | +48 451 530 126',
+      href: 'tel:+4561226883',
+    },
     {
       type: ContactType.Location,
       text: 'Copenhagen, Denmark',
       href: 'https://www.google.ca/maps/place/Copenhagen/',
     },
     {
-      type: ContactType.Github,
-      text: 'LinkedIn',
+      type: ContactType.LinkedIn,
+      text: 'linkedin.com/in/praczka',
       href: 'https://linkedin.com/in/praczka',
     },
   ],
@@ -236,5 +251,4 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://linkedin.com/in/praczka'},
-  // {label: 'Github', Icon: GithubIcon, href: 'https://github.com/YourUsername'},
 ];
