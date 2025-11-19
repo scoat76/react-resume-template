@@ -87,18 +87,18 @@ export const heroData: Hero = {
 };
 
 /**
- * About section
- */
-export const aboutData: About = {
-  profileImageSrc: profilepic,
-  [cite_start]description: `Senior IT Delivery Lead & BizDevOps Strategist with 20+ years of experience[cite: 5]. [cite_start]My leadership style, rooted in Scandinavian trust, empowers cross-border teams to deliver measurable value through collaboration rather than control[cite: 6, 8]. [cite_start]I excel at combining direct, transparent communication with a focus on psychological safety[cite: 9]. [cite_start]My technical understanding bridges the gap with engineering teams by focusing on Developer Experience (DevEx) pain points[cite: 18].`,
-  aboutItems: [
-    {label: 'Languages', text: 'Polish (Native), English (Full), Danish (Full Spoken)', Icon: FlagIcon},
-    {label: 'Education', text: 'M.Eng., Warsaw University of Technology', Icon: AcademicCapIcon},
-    {label: 'Core Focus', text: 'BizDevOps Strategy & Value Stream Optimization', Icon: BuildingOffice2Icon},
-    {label: 'Strategy', text: 'Focus, strategy, and teamwork (Scuba/Skiing/Chess)', Icon: SparklesIcon},
-  ],
-};
+  * About section
+  */
+ export const aboutData: About = {
+   profileImageSrc: profilepic,
+   description: `Senior IT Delivery Lead & BizDevOps Strategist with 20+ years of experience. My leadership style, rooted in Scandinavian trust, empowers cross-border teams to deliver measurable value through collaboration rather than control. I excel at combining direct, transparent communication with a focus on psychological safety. My technical understanding bridges the gap with engineering teams by focusing on Developer Experience (DevEx) pain points.`,
+   aboutItems: [
+     {label: 'Languages', text: 'Polish (Native), English (Full), Danish (Full Spoken)', Icon: FlagIcon},
+     {label: 'Education', text: 'M.Eng., Warsaw University of Technology', Icon: AcademicCapIcon},
+     {label: 'Core Focus', text: 'BizDevOps Strategy & Value Stream Optimization', Icon: BuildingOffice2Icon},
+     {label: 'Strategy', text: 'Focus, strategy, and teamwork (Scuba/Skiing/Chess)', Icon: SparklesIcon},
+   ],
+ };
 
 /**
  * Skills section
