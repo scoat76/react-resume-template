@@ -216,7 +216,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2003 – 2007',
-    location: 'Agricultural Market Agency',
+    location: 'Agricultural Market Agency, Warsaw',
     title: 'Head of Test & Release Department',
     content: <p>Managed a team of 17 and ensured EU accreditation of IT systems.</p>,
   },
