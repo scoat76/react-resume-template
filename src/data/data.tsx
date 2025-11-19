@@ -13,7 +13,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -29,12 +28,15 @@ import {
   TimelineItem,
 } from './dataDef';
 
+// Używamy nazwy pliku z CV
+const RESUME_DOWNLOAD_URL = '/CV_IT_Delivery_Transformation_Lead.pdf';
+
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Przemyslaw Raczka | Enterprise Transformation Lead',
-  description: "Professional portfolio of Przemyslaw Raczka, Enterprise Transformation Lead and SAFe Program Consultant.",
+  title: 'Przemyslaw Raczka | IT Delivery & Transformation Lead',
+  description: "Professional portfolio of Przemyslaw Raczka, IT Delivery & Transformation Lead and BizDevOps Strategist.",
 };
 
 /**
@@ -62,16 +64,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">Enterprise Transformation Lead</strong> & Head of Value Stream Management.
+        <strong className="text-stone-100">IT Delivery & Transformation Lead</strong> | Senior Program Manager.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Known as <strong className="text-stone-100">"The Value Accelerator"</strong>. I bridge strategic vision with practical execution, utilizing data-driven insights and Nordic management style to deliver measurable business value.
+        [cite_start]A <strong className="text-stone-100">Nordic-fluent leader</strong> who translates complex strategic roadmaps into actionable technical backlogs, combining transparent communication with a focus on psychological safety[cite: 6, 9].
       </p>
     </>
   ),
   actions: [
     {
-      href: '/CV_Enterprise_Transformation_Lead.pdf', // Pamiętaj, aby zmienić nazwę pliku w folderze public, jeśli wgrasz nowy
+      href: RESUME_DOWNLOAD_URL,
       text: 'Download CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -89,13 +91,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Senior leader with over 20 years in IT and financial services, certified SAFe Program Consultant (SPC). My strength lies in bridging strategic vision with practical, hands-on execution. Originally from Poland and a long-term resident of Denmark, I am culturally fluent and utilize this perspective to foster collaboration in international teams. I excel at translating complex theory into practice using structured working methods and data-driven analysis.`,
+  [cite_start]description: `Senior IT Delivery Lead & BizDevOps Strategist with 20+ years of experience[cite: 5]. [cite_start]My leadership style, rooted in Scandinavian trust, empowers cross-border teams to deliver measurable value through collaboration rather than control[cite: 6, 8]. [cite_start]I excel at combining direct, transparent communication with a focus on psychological safety[cite: 9]. [cite_start]My technical understanding bridges the gap with engineering teams by focusing on Developer Experience (DevEx) pain points[cite: 18].`,
   aboutItems: [
-    {label: 'Location', text: 'Copenhagen, Denmark / Warsaw, Poland', Icon: MapIcon},
-    {label: 'Languages', text: 'Polish (Native), English (Full), Danish (PD4)', Icon: FlagIcon},
-    {label: 'Interests', text: 'Chess, Scuba Diving, Skiing, AI & Automation', Icon: SparklesIcon},
+    {label: 'Languages', text: 'Polish (Native), English (Full), Danish (Full Spoken)', Icon: FlagIcon},
     {label: 'Education', text: 'M.Eng., Warsaw University of Technology', Icon: AcademicCapIcon},
-    {label: 'Core Focus', text: 'Value Stream Management', Icon: BuildingOffice2Icon},
+    {label: 'Core Focus', text: 'BizDevOps Strategy & Value Stream Optimization', Icon: BuildingOffice2Icon},
+    {label: 'Strategy', text: 'Focus, strategy, and teamwork (Scuba/Skiing/Chess)', Icon: SparklesIcon},
   ],
 };
 
@@ -104,35 +105,35 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Enterprise Transformation',
+    name: 'Delivery & Program Mgmt',
     skills: [
-      {name: 'SAFe & Lean Portfolio Mgmt', level: 10, max: 10},
-      {name: 'Organizational Design', level: 9, max: 10},
-      {name: 'Change Management', level: 9, max: 10},
+      {name: 'Program Management', level: 10, max: 10},
+      {name: 'Vendor & Risk Management', level: 9, max: 10},
+      {name: 'Operational Stability & Governance', level: 9, max: 10},
     ],
   },
   {
-    name: 'Value Stream Mgmt',
+    name: 'BizDevOps & Strategy',
     skills: [
-      {name: 'Process Optimization', level: 10, max: 10},
-      {name: 'Business-IT Alignment', level: 9, max: 10},
-      {name: 'Flow Metrics Analysis', level: 9, max: 10},
+      {name: 'Value Stream Mapping & Flow Metrics', level: 10, max: 10},
+      {name: 'Legacy Modernization Strategy', level: 8, max: 10},
+      {name: 'Gap Analysis & Roadmap Execution', level: 9, max: 10},
     ],
   },
   {
-    name: 'Data & Technology',
+    name: 'Technical Oversight & Data',
     skills: [
-      {name: 'Power BI & SQL', level: 8, max: 10},
-      {name: 'Python & Automation', level: 7, max: 10},
-      {name: 'CI/CD & DevOps', level: 7, max: 10},
+      {name: 'Jira (Admin) & Confluence', level: 10, max: 10},
+      {name: 'Test Automation Strategy (CI/CD)', level: 8, max: 10},
+      {name: 'Power BI (Data Modeling)', level: 8, max: 10},
     ],
   },
   {
-    name: 'Leadership',
+    name: 'Leadership & Organization',
     skills: [
-      {name: 'Executive Coaching', level: 9, max: 10},
-      {name: 'Stakeholder Engagement', level: 10, max: 10},
-      {name: 'Large-Scale Training', level: 10, max: 10},
+      {name: 'Stakeholder Mgmt (C-Level)', level: 9, max: 10},
+      {name: 'Cross-Border Team Mgmt (DK/PL)', level: 9, max: 10},
+      {name: 'Organizational Design & Change Mgmt', level: 8, max: 10},
     ],
   },
 ];
@@ -142,23 +143,23 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Serverless AI Assistant',
-    description: 'Architected and deployed a serverless AI assistant via an automated CI/CD pipeline (Netlify), demonstrating full-stack, end-to-end delivery capability.',
+    title: 'Value Stream Optimization (VSO)',
+    [cite_start]description: 'Mapped end-to-end Value Streams across IT and Business to identify systemic bottlenecks, directly contributing to faster time-to-market for banking products[cite: 29].',
     url: '#',
     image: porfolioImage1,
   },
   {
-    title: 'Internal Agile Academy',
-    description: 'Designed and scaled an internal Agile Academy, training over 1,600 colleagues across Nordics and Poland, achieving a 4.7/5 satisfaction score.',
+    title: 'Flow Metrics & Governance Dashboard',
+    [cite_start]description: 'Architected a flow-metrics dashboard (Power BI/Power Platform) to enable real-time delivery performance monitoring, replacing manual reporting for leadership[cite: 30].',
     url: '#',
     image: porfolioImage2,
   },
   {
-      title: 'AI & Home Automation System',
-      description: 'Built a functional home automation system using Raspberry Pi, Python, and YAML, integrating multiple APIs to automate routines and reduce energy consumption.',
-      url: '#',
-      image: porfolioImage3,
-    },
+    title: 'IoT & Cost Optimization (R&D)',
+    [cite_start]description: 'Engineered a Home Assistant ecosystem to automate energy management, successfully reducing utility costs through data-driven automation[cite: 21].',
+    url: '#',
+    image: porfolioImage3,
+  },
 ];
 
 /**
@@ -169,7 +170,7 @@ export const education: TimelineItem[] = [
     date: '1996 – 2002',
     location: 'Warsaw University of Technology',
     title: 'M.Eng., Computer-Aided Design (CAD)',
-    content: <p>Master of Engineering degree.</p>,
+    [cite_start]content: <p>Completed Master of Engineering studies[cite: 59].</p>,
   },
 ];
 
@@ -177,35 +178,45 @@ export const experience: TimelineItem[] = [
   {
     date: '2018 – Present',
     location: 'Nordea, Copenhagen',
-    title: 'Agile Coach / Enterprise Transformation Lead',
+    title: 'BizDevOps Transformation Lead & Delivery Manager',
     content: (
       <ul className="list-disc pl-5">
-        <li>Managed multiple Agile Release Trains (ARTs) across 2,700+ IT employees.</li>
-        <li>Improved delivery predictability from 65% to 90% and reduced feature cycle time by 20%.</li>
-        <li>Partnered with leadership to map end-to-end financial processes and identify bottlenecks.</li>
-        <li>Introduced Power Platform tools reducing training administration by 60%.</li>
+        [cite_start]<li>Leading the implementation of the Nordea Technology Strategy, aligning 10+ tech areas with modern BizDevOps practices[cite: 27].</li>
+        [cite_start]<li>Architected a flow-metrics dashboard (Power BI/Power Platform) for real-time delivery performance monitoring[cite: 30].</li>
+        [cite_start]<li>Successfully integrated ITIL-based Operations teams with SAFe-based Development trains (ARTs)[cite: 39].</li>
+        [cite_start]<li>Designed and scaled the internal Agile Academy, training 1,600+ colleagues across Nordics and Poland[cite: 34].</li>
       </ul>
     ),
   },
   {
     date: '2017 – 2018',
     location: 'Nordea, Copenhagen',
-    title: 'Senior Project Methods Expert',
+    title: 'Senior Project Methods Expert & Scrum Master',
     content: (
-      <p>
-        Acted as Scrum Master and process lead. Facilitated process improvements that increased team velocity by 25% and reduced critical bug-fix turnaround time by 40%.
-      </p>
+      <ul className="list-disc pl-5">
+        [cite_start]<li>Increased team velocity by 35% within 6 months through targeted process improvements[cite: 45].</li>
+        [cite_start]<li>Reduced critical bug-fix turnaround time by 40% by optimizing the defect management process[cite: 46].</li>
+        [cite_start]<li>Ensured technology compliance by aligning project and maintenance teams with Nordea Software Process standards[cite: 47].</li>
+      </ul>
     ),
   },
   {
     date: '2008 – 2016',
     location: 'Nordea, Copenhagen',
-    title: 'IT Senior Test Manager',
+    title: 'IT Senior Test Manager (Program Level)',
     content: (
-      <p>
-        Directed testing for large-scale programs and projects across multiple countries. Implemented risk-based QA strategies increasing defect detection efficiency by 30%.
-      </p>
+      <ul className="list-disc pl-5">
+        [cite_start]<li>Managed QA and Testing for 2 large-scale transformation programs, coordinating distributed teams[cite: 50].</li>
+        [cite_start]<li>Successfully reduced critical post-release defects by 50% by implementing a risk-based testing strategy[cite: 52].</li>
+        [cite_start]<li>Accountable for QA budget, resource forecasting, and risk mitigation strategy[cite: 51].</li>
+      </ul>
     ),
+  },
+  {
+    date: '2003 – 2007',
+    location: 'Agricultural Market Agency',
+    title: 'Head of Test & Release Department',
+    [cite_start]content: <p>Managed a team of 17 and ensured EU accreditation of IT systems[cite: 55].</p>,
   },
 ];
 
@@ -215,15 +226,23 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
+    // REFERENCJA 1: BIZDEVOPS & STRATEGIA (NOWY PRIORYTET)
     {
-      name: 'Stakeholder, Nordea',
-      text: "Przemyslaw is a direct and frank communicator who excels at translating complex theory into practice. His structured methods deliver tangible business value.",
+      name: 'Strategic Deployment Leader',
+      text: "Przemyslaw is a Nordic-fluent leader who is an expert in translating complex strategic roadmaps into actionable technical backlogs. His work on data-driven governance enabled real-time decision-making for leadership.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
+    // REFERENCJA 2: DELIVERY & METRYKI (TEST MANAGER/EKSPERT)
     {
-      name: 'Academy Participant',
-      text: 'The Agile Academy designed by Przemyslaw was a game changer for our department, significantly upskilling our workforce across the Nordics.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Senior Program Stakeholder',
+      text: "Through optimizing our defect management process and enhancing collaboration between Development and Operations, Przemyslaw reduced our critical bug-fix turnaround time by 40%.",
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/73.jpg',
+    },
+    // REFERENCJA 3: AGILE COACH & NAUCZANIE (SKALOWANIE)
+    {
+      name: 'Capability Builder (L&D)',
+      text: "Przemyslaw's leadership in designing and scaling the internal Agile Academy resulted in the upskilling of over 1,600 colleagues across Nordics and Poland.",
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/55.jpg',
     },
   ],
 };
@@ -233,18 +252,8 @@ export const testimonial: TestimonialSection = {
  */
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out for collaboration opportunities, consulting, or questions regarding Enterprise Transformation.',
+  description: 'Feel free to reach out for collaboration opportunities, consulting, or questions regarding BizDevOps Strategy and Value Stream Optimization.',
   items: [
-    {
-      type: ContactType.Phone,
-      text: '+45 61226883 | +48 451 530 126',
-      href: 'tel:+4561226883',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Copenhagen, Denmark',
-      href: 'https://www.google.ca/maps/place/Copenhagen/',
-    },
     {
       type: ContactType.LinkedIn,
       text: 'linkedin.com/in/praczka',
