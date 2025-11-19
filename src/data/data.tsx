@@ -5,6 +5,7 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   FlagIcon,
+  MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
