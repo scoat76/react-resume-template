@@ -13,6 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -67,7 +68,7 @@ export const heroData: Hero = {
         <strong className="text-stone-100">IT Delivery & Transformation Lead</strong> | Senior Program Manager.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        [cite_start]A <strong className="text-stone-100">Nordic-fluent leader</strong> who translates complex strategic roadmaps into actionable technical backlogs, combining transparent communication with a focus on psychological safety[cite: 6, 9].
+        A <strong className="text-stone-100">Nordic-fluent leader</strong> who translates complex strategic roadmaps into actionable technical backlogs, combining transparent communication with a focus on psychological safety.
       </p>
     </>
   ),
@@ -144,19 +145,19 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Value Stream Optimization (VSO)',
-    [cite_start]description: 'Mapped end-to-end Value Streams across IT and Business to identify systemic bottlenecks, directly contributing to faster time-to-market for banking products[cite: 29].',
+    description: 'Mapped end-to-end Value Streams across IT and Business to identify systemic bottlenecks, directly contributing to faster time-to-market for banking products.',
     url: '#',
     image: porfolioImage1,
   },
   {
     title: 'Flow Metrics & Governance Dashboard',
-    [cite_start]description: 'Architected a flow-metrics dashboard (Power BI/Power Platform) to enable real-time delivery performance monitoring, replacing manual reporting for leadership[cite: 30].',
+    description: 'Architected a flow-metrics dashboard (Power BI/Power Platform) to enable real-time delivery performance monitoring, replacing manual reporting for leadership.',
     url: '#',
     image: porfolioImage2,
   },
   {
     title: 'IoT & Cost Optimization (R&D)',
-    [cite_start]description: 'Engineered a Home Assistant ecosystem to automate energy management, successfully reducing utility costs through data-driven automation[cite: 21].',
+    description: 'Engineered a Home Assistant ecosystem to automate energy management, successfully reducing utility costs through data-driven automation.',
     url: '#',
     image: porfolioImage3,
   },
@@ -170,7 +171,7 @@ export const education: TimelineItem[] = [
     date: '1996 – 2002',
     location: 'Warsaw University of Technology',
     title: 'M.Eng., Computer-Aided Design (CAD)',
-    [cite_start]content: <p>Completed Master of Engineering studies[cite: 59].</p>,
+    content: <p>Completed Master of Engineering studies.</p>,
   },
 ];
 
@@ -181,10 +182,10 @@ export const experience: TimelineItem[] = [
     title: 'BizDevOps Transformation Lead & Delivery Manager',
     content: (
       <ul className="list-disc pl-5">
-        [cite_start]<li>Leading the implementation of the Nordea Technology Strategy, aligning 10+ tech areas with modern BizDevOps practices[cite: 27].</li>
-        [cite_start]<li>Architected a flow-metrics dashboard (Power BI/Power Platform) for real-time delivery performance monitoring[cite: 30].</li>
-        [cite_start]<li>Successfully integrated ITIL-based Operations teams with SAFe-based Development trains (ARTs)[cite: 39].</li>
-        [cite_start]<li>Designed and scaled the internal Agile Academy, training 1,600+ colleagues across Nordics and Poland[cite: 34].</li>
+        <li>Leading the implementation of the Nordea Technology Strategy, aligning 10+ tech areas with modern BizDevOps practices.</li>
+        <li>Architected a flow-metrics dashboard (Power BI/Power Platform) for real-time delivery performance monitoring.</li>
+        <li>Successfully integrated ITIL-based Operations teams with SAFe-based Development trains (ARTs).</li>
+        <li>Designed and scaled the internal Agile Academy, training 1,600+ colleagues across Nordics and Poland.</li>
       </ul>
     ),
   },
@@ -194,9 +195,9 @@ export const experience: TimelineItem[] = [
     title: 'Senior Project Methods Expert & Scrum Master',
     content: (
       <ul className="list-disc pl-5">
-        [cite_start]<li>Increased team velocity by 35% within 6 months through targeted process improvements[cite: 45].</li>
-        [cite_start]<li>Reduced critical bug-fix turnaround time by 40% by optimizing the defect management process[cite: 46].</li>
-        [cite_start]<li>Ensured technology compliance by aligning project and maintenance teams with Nordea Software Process standards[cite: 47].</li>
+        <li>Increased team velocity by 35% within 6 months through targeted process improvements.</li>
+        <li>Reduced critical bug-fix turnaround time by 40% by optimizing the defect management process.</li>
+        <li>Ensured technology compliance by aligning project and maintenance teams with Nordea Software Process standards.</li>
       </ul>
     ),
   },
@@ -206,9 +207,9 @@ export const experience: TimelineItem[] = [
     title: 'IT Senior Test Manager (Program Level)',
     content: (
       <ul className="list-disc pl-5">
-        [cite_start]<li>Managed QA and Testing for 2 large-scale transformation programs, coordinating distributed teams[cite: 50].</li>
-        [cite_start]<li>Successfully reduced critical post-release defects by 50% by implementing a risk-based testing strategy[cite: 52].</li>
-        [cite_start]<li>Accountable for QA budget, resource forecasting, and risk mitigation strategy[cite: 51].</li>
+        <li>Managed QA and Testing for 2 large-scale transformation programs, coordinating distributed teams.</li>
+        <li>Successfully reduced critical post-release defects by 50% by implementing a risk-based testing strategy.</li>
+        <li>Accountable for QA budget, resource forecasting, and risk mitigation strategy.</li>
       </ul>
     ),
   },
@@ -216,7 +217,7 @@ export const experience: TimelineItem[] = [
     date: '2003 – 2007',
     location: 'Agricultural Market Agency',
     title: 'Head of Test & Release Department',
-    [cite_start]content: <p>Managed a team of 17 and ensured EU accreditation of IT systems[cite: 55].</p>,
+    content: <p>Managed a team of 17 and ensured EU accreditation of IT systems.</p>,
   },
 ];
 
