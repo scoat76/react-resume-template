@@ -52,6 +52,7 @@ export interface PortfolioItem {
   description: string;
   url: string;
   image: string | StaticImageData;
+  video?: string;
 }
 
 export interface TimelineItem {

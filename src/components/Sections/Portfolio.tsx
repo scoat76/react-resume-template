@@ -17,19 +17,32 @@ const Portfolio: FC = memo(() => {
         {/* ZMIANA: Zastąpienie columns-x przez grid-cols-2 (na dużych ekranach), aby obrazki były duże. */}
         <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
           {portfolioItems.map((item, index) => {
-            const {title, image} = item;
+            const {title, image, video} = item;
             return (
               <div key={`${title}-${index}`}>
                 <div
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image
+                  {video ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="h-full w-full object-cover"
+                    >
+                      <source src={video} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <Image
                     alt={title}
                     className="h-full w-full object-cover"
+
                     placeholder="blur"
                     src={image}
-                  />
+                    />
+                  )}
                   <ItemOverlay item={item} />
                 </div>
               </div>
