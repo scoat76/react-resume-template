@@ -36,8 +36,8 @@ const RESUME_DOWNLOAD_URL = '/CV_IT_Delivery_Transformation_Lead.pdf';
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Przemyslaw Raczka | IT Delivery & Transformation Lead',
-  description: "Professional portfolio of Przemyslaw Raczka, IT Delivery & Transformation Lead and BizDevOps Strategist.",
+  title: 'Przemyslaw Raczka | Senior Innovation Consultant & AI Strategy Expert',
+  description: "Professional portfolio of Przemyslaw Raczka, Operational Architect, AI Strategy & Enterprise Delivery Expert bridging enterprise discipline with startup velocity.",
 };
 
 /**
@@ -65,10 +65,10 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">IT Delivery & Transformation Lead</strong> | Senior Program Manager.
+        <strong className="text-stone-100">Senior Innovation Consultant</strong> | AI Strategy & Enterprise Delivery Expert.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        A <strong className="text-stone-100">Nordic-fluent leader</strong> who translates complex strategic roadmaps into actionable technical backlogs, combining transparent communication with a focus on psychological safety.
+        An <strong className="text-stone-100">Operational Architect</strong> bridging enterprise discipline with startup velocity. I orchestrate delivery for large organizations while building AI-driven SaaS products from the ground up, combining high empathy with a "Builder’s Mindset".
       </p>
     </>
   ),
@@ -92,12 +92,12 @@ export const heroData: Hero = {
   */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Senior IT Delivery Lead & BizDevOps Strategist with 20+ years of experience. My leadership style, rooted in Scandinavian trust, empowers cross-border teams to deliver measurable value through collaboration rather than control. I excel at combining direct, transparent communication with a focus on psychological safety. My technical understanding bridges the gap with engineering teams by focusing on Developer Experience (DevEx) pain points.`,
+  description: `Senior Innovation Consultant and IT Delivery Lead with 20+ years of experience driving digital transformation across the Nordic financial sector. I offer a direct, analytical perspective that helps organizations transition from legacy mindsets to AI-augmented workflows. I don't just advise on strategy; I build the automation tools (AI agents, Low-Code, Python) that make innovation tangible. My leadership style empowers cross-border teams to deliver measurable value through collaboration rather than control.`,
   aboutItems: [
     {label: 'Location', text: 'Copenhagen, Denmark / Warsaw, Poland', Icon: MapIcon}, // Dodano lokalizację
     {label: 'Languages', text: 'Polish (Native), English (Full), Danish (Full)', Icon: FlagIcon},
     {label: 'Education', text: 'M.Eng., Warsaw University of Technology', Icon: AcademicCapIcon},
-    {label: 'Core Focus', text: 'BizDevOps Strategy & Value Stream Optimization', Icon: BuildingOffice2Icon},
+    {label: 'Core Focus', text: 'AI Strategy, Autonomous Agents & Enterprise Delivery', Icon: BuildingOffice2Icon},
     {label: 'Personal Interests', text: 'Scuba Diving, Downhill Skiing, Go-Karting, Chess', Icon: SparklesIcon},
   ],
 };
@@ -106,6 +106,14 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
+  {
+    name: 'AI & Automation',
+    skills: [
+      {name: 'Autonomous AI Agents', level: 9, max: 10},
+      {name: 'LLM Workflows & Prompt Eng.', level: 8, max: 10},
+      {name: 'Python & Low-Code', level: 8, max: 10},
+    ],
+  },
   {
     name: 'Delivery & Program Mgmt',
     skills: [
@@ -145,6 +153,12 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'PropFolio (Stealth PropTech)',
+    description: 'Founder & Product Lead. Architecting an AI-first SaaS platform for real estate portfolio management. Built a production-grade MVP using autonomous AI agents, reducing development time by ~70%.',
+    url: '#',
+    image: porfolioImage1, // Zmienimy wkrótce na konkretne foto
+  },
+  {
     title: 'Value Stream Optimization (VSO)',
     description: 'Mapped end-to-end Value Streams across IT and Business to identify systemic bottlenecks, directly contributing to faster time-to-market for banking products.',
     url: '#',
@@ -178,27 +192,40 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: '2018 – Present',
-    location: 'Nordea, Copenhagen',
-    title: 'BizDevOps Transformation Lead & Delivery Manager',
+    date: 'Jan 2026 – Present',
+    location: 'PropFolio (Stealth PropTech), Copenhagen',
+    title: 'Founder & Product Lead',
     content: (
       <ul className="list-disc pl-5">
-        <li>Leading the implementation of the Nordea Technology Strategy, aligning 10+ tech areas with modern BizDevOps practices.</li>
-        <li>Architected a flow-metrics dashboard (Power BI/Power Platform) for real-time delivery performance monitoring.</li>
-        <li>Successfully integrated ITIL-based Operations teams with SAFe-based Development trains (ARTs).</li>
-        <li>Designed and scaled the internal Agile Academy, training 1,600+ colleagues across Nordics and Poland.</li>
+        <li>Architecting an AI-first SaaS platform for real estate portfolio management, focusing on automated financial reporting and asset optimization.</li>
+        <li>Built a production-grade MVP in 3 months by leveraging autonomous AI agents, reducing traditional development time by ~70%.</li>
+        <li>Integrated LLM workflows to automate lease agreement analysis, increasing data extraction accuracy compared to manual entry.</li>
       </ul>
     ),
   },
   {
-    date: '2017 – 2018',
-    location: 'Nordea, Copenhagen',
-    title: 'Senior Project Methods Expert & Scrum Master',
+    date: 'Ongoing',
+    location: 'Personal Lab',
+    title: 'Innovation Lead | Home Assistant Ecosystem',
     content: (
       <ul className="list-disc pl-5">
-        <li>Increased team velocity by 35% within 6 months through targeted process improvements.</li>
-        <li>Reduced critical bug-fix turnaround time by 40% by optimizing the defect management process.</li>
-        <li>Ensured technology compliance by aligning project and maintenance teams with Nordea Software Process standards.</li>
+        <li>Engineering a private IoT infrastructure (Python, YAML) for advanced energy management and hardware integration.</li>
+        <li>Automated energy consumption patterns, resulting in a 15% reduction in utility costs.</li>
+        <li>Serves as a sandbox for testing real-time data processing and hardware-software integration protocols.</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Oct 2014 – Dec 2025',
+    location: 'Nordea, Copenhagen / Warsaw',
+    title: 'Senior IT Delivery Lead',
+    content: (
+      <ul className="list-disc pl-5">
+        <li>Led the structural Agile restructuring of 2,700+ IT employees, organizing siloed departments into Agile Release Trains (ARTs) to improve predictability.</li>
+        <li>Architected an internal "Agile Academy" that upskilled 1,600+ colleagues within 12 months (Satisfaction Score: 4.7/5).</li>
+        <li>Deployed Power BI flow-metrics dashboards that replaced manual reporting, cutting administrative effort by 40%.</li>
+        <li>Identified and removed systemic bottlenecks in the SDLC, reducing average feature lead time by 25% for key business units.</li>
+        <li>Established a QA automation framework that reduced manual certification efforts by 90% for critical financial systems.</li>
       </ul>
     ),
   },
