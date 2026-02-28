@@ -27,6 +27,7 @@ const Portfolio: FC = memo(() => {
                   <Image
                     alt={title}
                     className="h-full w-full object-cover"
+
                     placeholder="blur"
                     src={image}
                   />

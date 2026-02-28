@@ -11,11 +11,13 @@ import {
 
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import portfolioPropFolio from '../images/portfolio/portfolio-propfolio.jpg';
+import portfolioVso from '../images/portfolio/portfolio-vso.jpg';
+import portfolioDashboard from '../images/portfolio/portfolio-dashboard.jpg';
+import portfolioIot from '../images/portfolio/portfolio-iot.jpg';
+
 import {
   About,
   ContactSection,
@@ -156,25 +158,25 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'PropFolio (Stealth PropTech)',
     description: 'Founder & Product Lead. Architecting an AI-first SaaS platform for real estate portfolio management. Built a production-grade MVP using autonomous AI agents, reducing development time by ~70%.',
     url: '#',
-    image: porfolioImage1, // Zmienimy wkrótce na konkretne foto
+    image: portfolioPropFolio,
   },
   {
     title: 'Value Stream Optimization (VSO)',
     description: 'Mapped end-to-end Value Streams across IT and Business to identify systemic bottlenecks, directly contributing to faster time-to-market for banking products.',
     url: '#',
-    image: porfolioImage1,
+    image: portfolioVso,
   },
   {
     title: 'Flow Metrics & Governance Dashboard',
     description: 'Architected a flow-metrics dashboard (Power BI/Power Platform) to enable real-time delivery performance monitoring, replacing manual reporting for leadership.',
     url: '#',
-    image: porfolioImage2,
+    image: portfolioDashboard,
   },
   {
     title: 'IoT & Cost Optimization (R&D)',
     description: 'Engineered a Home Assistant ecosystem to automate energy management, successfully reducing utility costs through data-driven automation.',
     url: '#',
-    image: porfolioImage3,
+    image: portfolioIot,
   },
 ];
 
