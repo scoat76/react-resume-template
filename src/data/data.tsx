@@ -13,7 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import portfolioPropFolio from '../images/portfolio/portfolio-propfolio.jpg';
+
 import portfolioVso from '../images/portfolio/portfolio-vso.jpg';
 import portfolioDashboard from '../images/portfolio/portfolio-dashboard.jpg';
 import portfolioIot from '../images/portfolio/portfolio-iot.jpg';
@@ -158,7 +158,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'PropFolio (Stealth PropTech)',
     description: 'Founder & Product Lead. Architecting an AI-first SaaS platform for real estate portfolio management. Built a production-grade MVP using autonomous AI agents, reducing development time by ~70%.',
     url: '#',
-    image: portfolioPropFolio,
+    image: '',
+    video: '/videos/portfolio-propfolio.mp4',
   },
   {
     title: 'Value Stream Optimization (VSO)',
