@@ -9,18 +9,24 @@ import {useNavObserver} from '../../hooks/useNavObserver';
 
 export const headerID = 'headerNav';
 
+const navSections = [
+  SectionId.About,
+  SectionId.Resume,
+  SectionId.Portfolio,
+  SectionId.Testimonials,
+  SectionId.Contact,
+];
+
+const selectors = navSections.map(section => `#${section}`).join(',');
+
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
-  const navSections = useMemo(
-    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Testimonials, SectionId.Contact],
-    [],
-  );
 
   const intersectionHandler = useCallback((section: SectionId | null) => {
     section && setCurrentSection(section);
   }, []);
 
-  useNavObserver(navSections.map(section => `#${section}`).join(','), intersectionHandler);
+  useNavObserver(selectors, intersectionHandler);
 
   return (
     <>
