@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 
-import {headerID} from '../components/Sections/Header';
+import {headerID} from '../config';
 import {SectionId} from '../data/data';
 
 export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
