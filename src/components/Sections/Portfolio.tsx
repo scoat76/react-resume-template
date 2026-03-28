@@ -62,13 +62,16 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
 
+  const handleCloseOverlay = useCallback(() => setShowOverlay(false), []);
+
   useEffect(() => {
     // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
       setMobile(true);
     }
   }, []);
-  useDetectOutsideClick(linkRef, () => setShowOverlay(false));
+
+  useDetectOutsideClick(linkRef, handleCloseOverlay);
 
   const handleItemClick = useCallback(
     (event: MouseEvent<HTMLElement>) => {
